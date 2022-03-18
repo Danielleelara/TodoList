@@ -4,7 +4,7 @@ import Tasks from "../Components/Tasks";
 import styles from "./Home.module.css"
 
 export default function Home() {
-    const [tasks, setTasks] = useState();
+    const [tasks, setTasks] = useState([]);
 
     useEffect(()=>{
       async function getTasks() {
@@ -18,6 +18,7 @@ export default function Home() {
     <>
     <div className={styles.container}>
       <Tasks tasks={tasks}/>
+      {tasks.id}
     </div>
     </>
   )

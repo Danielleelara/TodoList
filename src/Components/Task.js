@@ -1,10 +1,10 @@
 import React from 'react'
-import Tasks from './Tasks'
+import Users from './Users'
 
-export default function Task({tasks}) {
+export default function Task({users}) {
   return (
     <>
-        {tasks.map(task => <Tasks/> )}
+        {users.map(task => <Users/> )}
     </>
   )
 }

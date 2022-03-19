@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import api from "../api";
-import Tasks from "../Components/Tasks";
+import Users from "../Components/Users";
 import styles from "./Home.module.css"
 
 export default function Home() {
-    const [tasks, setTasks] = useState([]);
+    const [users, setUsers] = useState([]);
 
     useEffect(()=>{
       async function getTasks() {
-        const response = await api.get("posts");
-        setTasks(response.data)
+        const response = await api.get("users");
+        setUsers(response.data)
       }
         getTasks()
       }, []);
@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <>
     <div className={styles.container}>
-      <Tasks tasks={tasks}/>
-      {tasks.id}
+        <h1>Usuários</h1>
+        <Users className={styles.users} users={users}/>    
     </div>
     </>
   )

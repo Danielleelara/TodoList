@@ -1,5 +1,5 @@
-import React from 'react'
-import Users from './Users'
+import React from 'react';
+import Users from './Users';
 
 export default function Task({users}) {
   return (

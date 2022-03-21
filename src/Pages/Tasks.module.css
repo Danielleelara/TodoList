@@ -1,3 +1,28 @@
-.lista {
-   border: solid 2px;
+.taskContainer {
+    background-color: #444;
+    margin: 8px 0;
+    padding: 15px 20px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: #eee;
+    align-items: center;
+}
+
+.taskTitle{
+    cursor: pointer;
+}
+
+.buttonsContainer {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.removeTaskButton {
+    background-color: #444;
+    border: none;
+    font-size: 24px;
+    color: chartreuse;
+    margin: 0 5px;
 }

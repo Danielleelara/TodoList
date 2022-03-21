@@ -4,9 +4,10 @@ import api from '../api';
 import styles from "./Home.module.css";
 import {v4 as uuidv4} from 'uuid';
 import AddTask from '../Components/AddTask';
+import { CgClose } from 'react-icons/cg';
 
 
-function Tasks({user}) {
+function Tasks() {
 
   const { id } = useParams();
     const[tasks, setTasks] = useState([]);
@@ -19,6 +20,15 @@ function Tasks({user}) {
         getTasks();
       }, [id]);
 
+      const handleTaskClick = (taskId) => {
+        const newTasks = tasks.map((task) => {
+          if(task.id === taskId)return {...task, completed: !task.completed }
+    
+          return task;
+        })
+        setTasks(newTasks);
+      }
+
       
       const handleTaskAddition = (taskTitle) =>{
         const newTasks = [...tasks, {
@@ -29,21 +39,37 @@ function Tasks({user}) {
         setTasks(newTasks);
       }
 
+      const handleTaskDeletion = (taskId) =>{
+        const newTasks = tasks.filter(task => task.id !== taskId)
+        setTasks(newTasks);
+      }
+
   return (
     <>
     
         <button class="btn-outline-secondary" type="button" onClick={()=>{window.history.back()}}>Voltar</button>
           
         <div className={styles.container}>
-        <h1 className="titulo">Tarefas</h1>
+        <h1>Tarefas</h1>
         
-        <AddTask handleTaskAddition={handleTaskAddition} />
+        <AddTask 
+          handleTaskAddition={handleTaskAddition}
+          handleTaskClick={handleTaskClick} 
+          handleTaskDeletion={handleTaskDeletion}
+        />
 
-        <ul className="lista">
+        <ul className={styles.lista}>
           {tasks.map((task) => {
             return (
               <ul key={task.id}>
                 <li>{task.title}</li>
+                <button 
+                   className={styles.removeTaskButton}
+                    onClick={() => handleTaskDeletion(task.id)}
+                    
+                >
+                    <CgClose />  
+                </button>
               </ul>
             );
           })}

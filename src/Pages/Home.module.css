@@ -1,17 +1,12 @@
 .container {
-    max-width: 500px;
+    max-width: 600px;
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
     border: 2px solid blueviolet;
     padding: 30px;
     border-radius: 10px;
-    background-color: gray;
-}
-
-.container:hover {
-    border: 2px solid gray;
-    background-color: cornsilk;
+    background-color: rgb(206, 203, 203);
 }
 
 h1{
@@ -19,9 +14,18 @@ h1{
     background-color: blueviolet;
     color:cornsilk;
   }
-.lista{
-   border: solid 2px;
+ul{
+  
+   display: flex;
+   flex-wrap: wrap ;
+   
 }
-
+.removeTaskButton {
+    background-color: #444;
+    border: none;
+    font-size: 24px;
+    color: blueviolet;
+    margin: 0 5px;
+}
 
   

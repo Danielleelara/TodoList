@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import Tasks from './Pages/Tasks';
 
 function App() {
- 
+
   return (
     <>
       <Router>     

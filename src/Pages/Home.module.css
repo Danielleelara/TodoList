@@ -19,9 +19,9 @@ h1{
     background-color: blueviolet;
     color:cornsilk;
   }
-
-.users {
-    cursor: pointer;
+.lista{
+   border: solid 2px;
 }
+
 
   

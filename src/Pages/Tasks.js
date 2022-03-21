@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import api from '../api';
+import styles from "./Home.module.css"
 
 
 function Tasks({user}) {
@@ -17,20 +18,24 @@ function Tasks({user}) {
       }, [id]);
       console.log('tasks', tasks)
   return (
+    <>
+    
+    <button class="btn-outline-secondary" type="button" onClick={()=>{window.history.back()}}>Voltar</button>
        
-    <div>
+    <div className={styles.container}>
     <h1 className="titulo">Tarefas</h1>
 
      <ul className="lista">
       {tasks.map((task) => {
         return (
-          <p key={task.id}>
-            <p>{task.title}</p>
-          </p>
+          <ul key={task.id}>
+            <li>{task.title}</li>
+          </ul>
         );
       })}
     </ul> 
   </div>
+    </>
   )
 }
 

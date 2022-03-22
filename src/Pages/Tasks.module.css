@@ -1,74 +1,96 @@
-.taskContainer {
-    background-color: #444;
-    padding: 15px 20px;
-    display: flex;
-    border-radius: 5px;
-    justify-content: space-between;
-    color: #eee;
-    align-items: center;
-}
-
-.taskTitle{
-    cursor: pointer;
-}
-
-.buttonsContainer {
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.removeTaskButton {
-    background-color: #444;
-    border: none;
-    font-size: 24px;
-    color: chartreuse;
-    margin:0 5px;
-}
-
 .container {
-    max-width: 700px;
-    margin: 10px auto;
-    overflow: auto;
-    min-height: 300px;
-    border: 2px solid blueviolet;
-    padding: 30px;
-    border-radius: 10px;
-    background-color: rgb(206, 203, 203);
-}
-
-h1{
-    text-align: center;
-    background-color: blueviolet;
-    color:cornsilk;
-  }
-ul{ 
-    justify-content: space-between;
-    border-radius: 5px;
-    flex: 2;
-    font-size: 16px;  
-    color: blueviolet;
-    list-style:none;
-    text-transform: uppercase;
-    background: rgb(206, 203, 203);
+  max-width: 700px;
+  margin: 10px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 2px solid blueviolet;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(206, 203, 203);
+  border-radius: 4px;
 }
 
 .removeTaskButton {
-    background-color: #444;
+  align-items: center;
+  background-color: rgba(215, 44, 13, 1);
+  border-radius: 4px;
+  border: none;
+  color: rgb(206, 203, 203);
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  margin: 0 5px;
+  padding: 6px;
+}
+
+.taskButton {
+    align-items: center;
+    border-radius: 4px;
     border: none;
-    font-size: 24px;
-    color: blueviolet;
-    margin: 0 5px;
-}
-.task{
-    
-    background: rgb(226, 220, 231);
-    margin: 10px 10px;
-    height: 40px;
-    padding: 0 10px;
+    color: rgb(206, 203, 203);
     cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    margin: 0 5px;
+    padding: 6px;
+}
+.goBackButton {
+    align-items: center;
+    border-radius: 4px;
+    border: 4px;
+    color: blueviolet;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    margin: 5px 5px;
+    width: 100px;
+    padding: 6px;
 }
 
-  
 
+.taskButtonSuccess {
+    background-color: rgba(0, 127, 95, 1);
+}
 
+.taskButtonDelete {
+    background-color: rgba(215, 44, 13, 1);
+}
+
+.actions {
+    display: flex;
+}
+
+h1 {
+  text-align: center;
+  background-color: blueviolet;
+  color: cornsilk;
+  border-radius: 4px;
+}
+
+ul {
+  background: rgb(206, 203, 203);
+  border-radius: 5px;
+  color: blueviolet;
+  flex: 2;
+  font-size: 16px;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.task {
+  background: white;
+  margin: 10px 0;
+  height: 40px;
+  padding-left: 10px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}

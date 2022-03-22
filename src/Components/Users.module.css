@@ -2,5 +2,9 @@
     text-decoration: none;
     cursor: pointer;
     color: blueviolet;
-    list-style:none;
+    list-style: none;
+    text-transform:none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
 }

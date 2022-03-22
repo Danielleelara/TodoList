@@ -17,6 +17,7 @@ const AddTask = ({handleTaskAddition, handleTaskClick}) => {
     return ( 
         <div className={styles.addTaskContainer}>
             <input 
+                placeholder="Insira uma tarefa" 
                 onChange={handleInputChange} 
                 value= {inputData}
                 className={styles.addTaskInput} 

@@ -1,4 +1,6 @@
 .users{
     text-decoration: none;
     cursor: pointer;
+    color: blueviolet;
+    list-style:none;
 }

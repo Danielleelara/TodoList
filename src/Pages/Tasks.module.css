@@ -1,6 +1,5 @@
 .taskContainer {
     background-color: #444;
-    margin: 8px 0;
     padding: 15px 20px;
     display: flex;
     border-radius: 5px;
@@ -24,5 +23,52 @@
     border: none;
     font-size: 24px;
     color: chartreuse;
+    margin:0 5px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 10px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 2px solid blueviolet;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(206, 203, 203);
+}
+
+h1{
+    text-align: center;
+    background-color: blueviolet;
+    color:cornsilk;
+  }
+ul{ 
+    justify-content: space-between;
+    border-radius: 5px;
+    flex: 2;
+    font-size: 16px;  
+    color: blueviolet;
+    list-style:none;
+    text-transform: uppercase;
+    background: rgb(206, 203, 203);
+}
+
+.removeTaskButton {
+    background-color: #444;
+    border: none;
+    font-size: 24px;
+    color: blueviolet;
     margin: 0 5px;
 }
+.task{
+    
+    background: rgb(226, 220, 231);
+    margin: 10px 10px;
+    height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+  
+
+

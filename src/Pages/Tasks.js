@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import api from '../api';
-import styles from "./Home.module.css";
+import styles from "./Tasks.module.css";
 import {v4 as uuidv4} from 'uuid';
 import AddTask from '../Components/AddTask';
 import { CgClose } from 'react-icons/cg';
@@ -47,7 +47,7 @@ function Tasks() {
   return (
     <>
     
-        <button class="btn-outline-secondary" type="button" onClick={()=>{window.history.back()}}>Voltar</button>
+        <button  type="button" onClick={()=>{window.history.back()}}>Voltar</button>
           
         <div className={styles.container}>
         <h1>Tarefas</h1>
@@ -56,21 +56,29 @@ function Tasks() {
           handleTaskAddition={handleTaskAddition}
           handleTaskClick={handleTaskClick} 
           handleTaskDeletion={handleTaskDeletion}
+
         />
 
-        <ul className={styles.lista}>
+        <ul className={styles.addTaskInput} >
           {tasks.map((task) => {
             return (
-              <ul key={task.id}>
-                <li>{task.title}</li>
+              <>
+              
+                <li 
+                  className={styles.task} 
+                  key={task.id} 
+                  style={task.completed ? {backgroundColor: 'white'}: {}}
+                  onClick={() => handleTaskClick(task.id)}
+                >
+                 {task.title}
+                 </li>
                 <button 
                    className={styles.removeTaskButton}
                     onClick={() => handleTaskDeletion(task.id)}
-                    
                 >
                     <CgClose />  
                 </button>
-              </ul>
+              </>
             );
           })}
         </ul> 

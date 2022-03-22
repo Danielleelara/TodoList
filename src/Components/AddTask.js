@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './AddTask.module.css'
 import Button from './Button';
 
-const AddTask = ({handleTaskAddition}) => {
+const AddTask = ({handleTaskAddition, handleTaskClick}) => {
     const[inputData, setInputData] = useState('');
 
     const handleInputChange = (e) => {

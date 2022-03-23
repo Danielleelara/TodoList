@@ -39,7 +39,7 @@ function Tasks() {
       const newTasks = [...tasks, newTask];
       setTasks(newTasks);
     } catch (error) {
-      console.log("Deu ruim papai");
+      console.log("Não foi possível adicionar uma nova tarefa");
     }
   };
 

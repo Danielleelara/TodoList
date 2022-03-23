@@ -1,8 +1,15 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Home from './Pages/Home';
+import Tasks from './Pages/Tasks';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+test('renderizar título home', () => {
+  render(<Home />);
+  const linkElement = screen.getByText(/Usuários/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renderizar titulo da página de tarefas', () => {
+  render(<Tasks />);
+  const linkElement = screen.getByText(/Tarefas/i);
   expect(linkElement).toBeInTheDocument();
 });

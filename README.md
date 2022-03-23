@@ -1,6 +1,6 @@
 # Lista de Tarefas
 
-Este é um projeto de lista de tarefas, que foi criado usando os dados da API https://jsonplaceholder.typicode.com/ e com a possibilidade de inclusão de novas tarefas para cada usuário individualmente. O projeto foi desenvolvido em ReactJs, a partir da criação de uma SPA, usando react-routes para a implementação das rotas, o axios para a busca dos dados na API e o React Icons para inclusão dos ícones.
+Este é um projeto de lista de tarefas, que foi criado usando os dados da API https://jsonplaceholder.typicode.com/ e com a possibilidade de inclusão de novas tarefas para cada usuário individualmente. O projeto foi desenvolvido em ReactJs, a partir da criação de uma SPA, usando react-routes para a implementação das rotas, o axios para a busca dos dados na API e o React Icons para inclusão dos ícones. Foram inclusos testes unitários.
 
 # Requisitos de ambiente e dependências
 
@@ -36,4 +36,8 @@ npm install react-icons --save
 6. Agora é só rodar o comando abaixo para rodar o projeto no Browser
 
 npm start
+
+7. Para rodar os testes, segue o comando:
+
+npm test
 

@@ -2,6 +2,11 @@
 
 Este é um projeto de lista de tarefas, que foi criado usando os dados da API https://jsonplaceholder.typicode.com/ e com a possibilidade de inclusão de novas tarefas para cada usuário individualmente. O projeto foi desenvolvido em ReactJs, a partir da criação de uma SPA, usando react-routes para a implementação das rotas, o axios para a busca dos dados na API e o React Icons para inclusão dos ícones. Foram inclusos testes unitários.
 
+![image](https://user-images.githubusercontent.com/78480991/161863476-5037fcc0-c680-47bb-8b56-7f90e28b6439.png)
+
+![image](https://user-images.githubusercontent.com/78480991/161863502-46e5217b-88de-40ab-8577-4b7d91c264bd.png)
+
+
 # Requisitos de ambiente e dependências
 
 Node v17.4.0 (npm v8.3.1)
